@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.O-Box {
+    background-color: rgb(223, 220, 220);
+    margin: 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Box {
+    background-color: rgb(252, 252, 252);
+    border-radius: 21px;
+    padding: 10px;
+    width: 322px;
+    border: 2px solid black;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 600px; /* Increased to accommodate the button */
+    display: flex;
+    flex-direction: column;
+}
+
+.Box img {
+    width: 300px;
+    border-radius: 21px;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-left: 10px;
+    border-radius: 15px;
+    padding: 4px;
+    color: rgb(235, 81, 107);
+    background-color: rgb(255, 255, 255);
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.Box .content {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.Box:target {
+    max-height: 1000px;
+}
+
+.Box:target .content {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.Box .read-more,
+.Box .read-less {
+    display: inline-block;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.Box .read-less {
+    display: none;
+}
+
+.Box:target .read-more {
+    display: none;
+}
+
+.Box:target .read-less {
+    display: inline-block;
+}
+
+h1 {
+    margin: 10px 0;
+}

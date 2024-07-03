@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.O-Box{
+    background-color: rgb(223, 220, 220);
+    margin: 0px;
+    padding: 30px;
+}
+.O-Box .Box img{
+    display: block;
+    width: 300px;
+    border-radius: 21px;
+    /* align-self: center; */
+    margin: auto;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+nav ul li{
+    display: inline-block;
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    border-radius: 15px;
+    padding: 4px;
+    color: rgb(235, 81, 107);
+    background-color: rgb(255, 255, 255);
+}
+.Box{
+    display: block;
+    background-color: rgb(252, 252, 252);
+    border-radius: 21px;
+    margin: 30px;
+    padding: 10px;
+    margin-top: auto;
+    width: 322px;
+    height: 516px;
+    overflow: auto;
+    /* margin-top: 30px; */
+    border: 2px solid black;
+    align-content: center;
+}
+
+nav ul  :hover{
+    display: inline-block;
+    /* border: 2px solid black; */
+    margin-top: 2%;
+    /* border-radius: 15px; */
+    /* padding: 4px; */
+    color: rgb(235, 81, 107);
+    /* background-color: rgb(255, 255, 255); */
+    transform: scale(1.2);
+}
+
+button{
+    display: inline-block;
+    border-radius: 200px;
+    padding: 10px;
+    margin: auto;
+}
